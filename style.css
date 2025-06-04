@@ -37,7 +37,7 @@ body {
     color: #f0f0f0; /* --light-text */
     padding: 15px 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(73, 62, 62, 0.3);
     z-index: 1000;
     font-family: var(--font-primary);
     font-size: 14px;
@@ -45,6 +45,75 @@ body {
     border-left: 4px solid #FFD700; /* --gold */
     animation: slideIn 0.5s ease-in-out;
 }
+
+.btn-gold:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    background-color: #d4b700; /* Slightly darker gold for loading state */
+}
+
+
+
+ .brand-card {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .social-media-container {
+    position: absolute;
+    top: 0;
+    margin-top: 8px;
+    right: -100px; /* Start off-screen to the right */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background: var(--gold);
+    border: 2px solid #ffc107;
+    border-radius: 20px;
+    opacity: 0;
+    z-index: 80;
+    transition: right 0.5s ease, opacity 0.5s ease, background 0.3s ease;
+  }
+
+  .brand-card:hover .social-media-container {
+    right: 10px; /* Slide in from the right */
+    opacity: 1;
+    /* background: transparent; */
+  }
+
+  .social-icon {
+    color: black; 
+    transition: color 0.3s ease;
+  }
+
+  .social-icon:hover {
+    color: #fff; 
+  }
+
+  .social-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .btn-outline-gold {
+    border: 2px solid #ffc107;
+    color: #ffc107;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+  .btn-outline-gold:hover {
+    background: #ffc107;
+    color: #fff;
+  }
 
 /* Slide-in animation for toast */
 @keyframes slideIn {
