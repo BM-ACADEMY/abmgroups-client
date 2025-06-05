@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CEO - ABM GROUPS</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="socialmedia.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <a href="index.html#hero" class="logo">ABM <span class="text-gold">GROUPS</span></a>
+      <nav class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#brands">Our Brands</a>
+        <a href="ceo.html">CEO</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="container" style="margin-top: 100px;">
+    <h1>CEO of ABM GROUPS</h1>
+    <p>Details about the CEO will go here...</p>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">
+          Get In <span class="text-gold">Touch</span>
+        </h2>
+        <div class="contact-grid">
+          <div class="contact-info" data-aos="fade-right">
+            <h3>Contact Details</h3>
+            <p>
+              <i class="fas fa-phone text-gold"></i>
+              <a href="tel:+919944940051">+91 99449 40051</a>
+            </p>
+            <p>
+              <i class="fas fa-envelope text-gold"></i>
+              <a href="mailto:abmgroups2025@gmail.com">abmgroups2025@gmail.com</a>
+            </p>
+            <p>
+              <i class="fab fa-whatsapp text-gold"></i>
+              <a href="https://wa.me/919944288271" target="_blank">+91 99442 88271</a>
+            </p>
+
+            <h3 class="mt-2">Follow Us</h3>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=61567695654956" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/bmtechxpondy_/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/bm-techx/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" data-aos="fade-left">
+            <h3>Send us a message</h3>
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Toast Container -->
+        <div id="form-message" style="display: none; text-align: center; padding: 10px; margin-top: 10px;"></div>
+        <div id="toast-message" class="toast"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <p>© <span id="currentYear"></span> ABM GROUPS. All Rights Reserved.</p>
+      <p>Location: Kottakupam, Tamil Nadu</p>
+    </div>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Auto-update year -->
+  <script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
